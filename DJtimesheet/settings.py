@@ -88,32 +88,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "DJtimesheet.wsgi.application"
 
-
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
-
-# DATABASES = {
-#     "default": {
-#         # "ENGINE": "django.db.backends.sqlite3",
-#         # "NAME": BASE_DIR / "db.sqlite3",
-#         "ENGINE": "django.db.backends.mysql",
-#         "NAME": "azuremysqldjangotimesheet",
-#         "USER": "mimimzhou",
-#         "PASSWORD": "mimimzhou@gmail.com",
-#         "HOST": "azremotemysqltest.mysql.database.azure.com",
-#         "PORT": "3306",
-#     }
-# }
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Timesheet',
-        'USER':'root',
-        'PASSWORD':'Honey2022!',
-        'HOST':'127.0.0.1',
-        'PORT': '3306',
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
